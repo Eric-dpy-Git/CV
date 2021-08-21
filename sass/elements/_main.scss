@@ -1,6 +1,6 @@
-.first__section {
+/* .first__section {
   background-color: $primaryLight;
-}
+} */
 
 .section__box {
   background-color: $primaryLight;
@@ -10,6 +10,8 @@
   min-width: 360px;
   max-width: 1440px;
   box-shadow: 5px 5px 5px $primary;
+  display: flex;
+  flex-direction: row-reverse;
 }
 .section__box-top,
 .section__box-central {
@@ -28,25 +30,6 @@
   text-align: right;
   margin: 0;
   padding: 10px 15px;
-}
-.name__box {
-  width: 280px;
-  height: 75px;
-  background-color: $primaryLight;
-  position: absolute;
-  z-index: 1;
-  top: 24%;
-  left: 3%;
-  top: 210px;
-  left: 60px;
-  border-radius: 10px 10px 0 0;
-  text-align: center;
-  & .name__text {
-    margin: 0;
-
-    font-size: 3em;
-    font-weight: lighter;
-  }
 }
 
 /* article style */
@@ -123,7 +106,9 @@
   text-align: center;
 }
 body {
-  background-color: $primary;
+  /* background-color: $primary;
+  max-width: 1440px;
+  margin: 0 auto; */
 }
 .list__size {
   text-align: center;

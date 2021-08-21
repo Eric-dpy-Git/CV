@@ -2,8 +2,8 @@ body {
   font-family: avenir, Verdana, Geneva, Tahoma, sans-serif;
 }
 .page__wrapper {
-  min-width: 360px;
+  background-color: $primary;
   max-width: 1440px;
+  min-width: 360px;
   margin: 0 auto;
-  padding: 0;
 }
