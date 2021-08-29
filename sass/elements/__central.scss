@@ -1,0 +1,51 @@
+.section__central {
+  background-color: burlywood;
+}
+
+.test-wrapper {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.test {
+  position: absolute;
+  width: 98%;
+  height: 160px;
+  left: 10px;
+  right: 10px;
+
+  background-color: aqua;
+  z-index: 1;
+}
+
+.behind__box {
+  min-width: 340px;
+  max-width: 98%;
+  margin: 0 auto;
+  background-color: blue;
+  & .behind__title {
+    font-size: 16px;
+    padding: 10px 0 0 150px;
+  }
+}
+.central__box {
+  margin: 0;
+}
+.card__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  & .card {
+    width: 170px;
+    margin: 10px;
+    background-color: $primaryDark;
+    text-align: center;
+    z-index: 2;
+  }
+}
+.nav__box {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}

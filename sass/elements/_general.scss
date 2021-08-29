@@ -3,7 +3,12 @@ body {
 }
 .page__wrapper {
   background-color: $primary;
-  max-width: 1440px;
+  max-width: 1240px;
   min-width: 360px;
   margin: 0 auto;
+}
+
+.fab {
+  font-size: 38px;
+  color: aqua;
 }
