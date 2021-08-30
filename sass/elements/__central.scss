@@ -1,5 +1,5 @@
 .section__central {
-  background-color: burlywood;
+  background-color: $primary;
 }
 
 .test-wrapper {
@@ -14,19 +14,31 @@
   left: 10px;
   right: 10px;
 
-  background-color: aqua;
+  background-color: $secondary;
   z-index: 1;
 }
 
-.behind__box {
+.card__title-box {
   min-width: 340px;
   max-width: 98%;
+  display: flex;
+  justify-content: space-around;
   margin: 0 auto;
-  background-color: blue;
+  background-color: $secondary;
   & .behind__title {
     font-size: 16px;
-    padding: 10px 0 0 150px;
+    padding: 10px 0 0 100px;
   }
+}
+.opLogo {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  align-self: flex-end;
+}
+.fa-github-square {
+  color: $black;
+  margin-bottom: 20px;
 }
 .central__box {
   margin: 0;
@@ -48,4 +60,36 @@
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
+}
+// colors
+
+.fa-html5 {
+  color: $html5;
+}
+.fa-css3-alt {
+  color: $css3;
+}
+.fa-sass {
+  color: $sass;
+}
+.fa-chart-line {
+  color: $seo;
+}
+.fa-universal-access {
+  color: $wcag;
+}
+.fa-js-square {
+  color: $js;
+}
+.fa-bootstrap {
+  color: $bootstrap;
+}
+.fa-node-js {
+  color: $node;
+}
+.fa-database {
+  color: $bdd;
+}
+.fa-vuejs {
+  color: $vue;
 }
