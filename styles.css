@@ -33,7 +33,7 @@ header {
 header .header__photo {
   width: 150px;
   height: 150px;
-  margin: 30px 0px 0px 0px;
+  margin: 30px 0px 0px 40px;
   border-radius: 50%;
   border: solid 2px #f7e460;
 }
@@ -49,6 +49,12 @@ header .header__box {
   text-align: center;
 }
 
+h1 {
+  color: white;
+  font-size: 3em;
+  margin: 20px 0 0 0;
+}
+
 .header__separation {
   height: 2px;
   border: 0;
@@ -57,16 +63,19 @@ header .header__box {
   background-color: #f7e460;
 }
 
-h1 {
-  color: white;
-  font-size: 3em;
-  margin: 20px 0 0 0;
-}
-
 .header__text {
   color: white;
   font-size: 1em;
   font-weight: bold;
+}
+
+.header-icon {
+  margin: 40px 40px 30px 30px;
+}
+
+.header-icon p {
+  margin: 0;
+  line-height: 16px;
 }
 
 .separation__box {
@@ -82,7 +91,17 @@ h1 {
   margin: 0 auto;
 }
 
-.left__container {
+.separation__box .small__part {
+  width: 60px;
+  height: 40px;
+  background-color: #f2f2f2;
+  -webkit-box-shadow: 5px 5px 5px #a6a6a6;
+          box-shadow: 5px 5px 5px #a6a6a6;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.separation__box .left__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,49 +109,42 @@ h1 {
   min-width: 350px;
 }
 
-.small__part {
-  width: 60px;
-  height: 40px;
-  background-color: #f2f2f2;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-.name__box {
+.separation__box .name__box {
   min-width: 200px;
   height: 55px;
   border-radius: 15px 15px 0 0;
   background-color: #f2f2f2;
+  -webkit-box-shadow: 5px 5px 5px #a6a6a6;
+          box-shadow: 5px 5px 5px #a6a6a6;
 }
 
-.left__part {
+.separation__box .left__part {
   width: 100%;
   height: 40px;
   background-color: #f2f2f2;
+  -webkit-box-shadow: 5px 5px 5px #a6a6a6;
+          box-shadow: 5px 5px 5px #a6a6a6;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 
-.right__container {
+.separation__box .right__container {
   width: 50%;
   min-width: 350px;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 
-.right__part {
-  width: 100%;
-  height: 40px;
-}
-
 .title__box {
   width: 100%;
   height: 40px;
   background-color: #f2f2f2;
+  -webkit-box-shadow: 5px 5px 5px #a6a6a6;
+          box-shadow: 5px 5px 5px #a6a6a6;
   text-align: right;
 }
 
-.title__font {
+.title__box .title__font {
   font-size: 22px;
   font-weight: bold;
   position: relative;
@@ -155,6 +167,8 @@ h1 {
   position: relative;
   bottom: 35px;
   background-color: #f2f2f2;
+  -webkit-box-shadow: 0px 5px 5px #a6a6a6;
+          box-shadow: 0px 5px 5px #a6a6a6;
 }
 
 .separation .section__title {
@@ -187,6 +201,7 @@ h1 {
 }
 
 .article__box .article__card .list__title {
+  padding: 20px;
   font-weight: bold;
   font-size: 20px;
 }
@@ -206,19 +221,9 @@ h1 {
   background-color: #bfbfbf;
 }
 
-.test-wrapper {
+.car__box-wrapper {
   position: relative;
   width: 100%;
-  z-index: 1;
-}
-
-.test {
-  position: absolute;
-  width: 98%;
-  height: 160px;
-  left: 10px;
-  right: 10px;
-  background-color: white;
   z-index: 1;
 }
 
@@ -232,11 +237,26 @@ h1 {
       justify-content: space-around;
   margin: 0 auto;
   background-color: white;
+  -webkit-box-shadow: 5px 5px 5px #a6a6a6;
+          box-shadow: 5px 5px 5px #a6a6a6;
 }
 
 .card__title-box .behind__title {
   font-size: 16px;
   padding: 10px 0 0 100px;
+}
+
+.behind__card {
+  position: absolute;
+  margin: 0 auto;
+  width: 90%;
+  left: 10px;
+  right: 10px;
+  height: 160px;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 5px #a6a6a6;
+          box-shadow: 5px 5px 5px #a6a6a6;
+  z-index: 1;
 }
 
 .opLogo {
@@ -245,11 +265,6 @@ h1 {
   margin: 15px;
   -ms-flex-item-align: end;
       align-self: flex-end;
-}
-
-.fa-github-square {
-  color: black;
-  margin-bottom: 20px;
 }
 
 .central__box {
@@ -270,6 +285,8 @@ h1 {
   width: 170px;
   margin: 10px;
   background-color: #a6a6a6;
+  -webkit-box-shadow: 5px -5px 5px #bfbfbf;
+          box-shadow: 5px -5px 5px #bfbfbf;
   text-align: center;
   z-index: 2;
 }
@@ -321,6 +338,11 @@ h1 {
 
 .fa-vuejs {
   color: #0df10d;
+}
+
+.fa-github-square {
+  color: black;
+  margin-bottom: 20px;
 }
 
 .box__wrapper {
