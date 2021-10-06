@@ -33,7 +33,7 @@ header {
 header .header__photo {
   width: 150px;
   height: 150px;
-  margin: 30px 0px 0px 40px;
+  margin: 30px 0px 0px 20px;
   border-radius: 50%;
   border: solid 2px #f7e460;
 }
@@ -395,10 +395,6 @@ footer {
   min-height: 200px;
 }
 
-footer .fas {
-  font-size: 18px;
-}
-
 .footer__wrapper {
   display: block;
   margin-top: 40px;
@@ -431,6 +427,12 @@ footer .fas {
   background-color: #f7e460;
 }
 
+.fa-mobile-alt,
+.fa-envelope,
+.fa-home {
+  font-size: 18px;
+}
+
 .fa-linkedin {
   color: #3737be;
   margin-right: 20px;
@@ -443,6 +445,10 @@ footer .fas {
   margin-bottom: 20px;
 }
 
+.fa-globe {
+  color: black;
+}
+
 .fa-mobile-alt,
 .fa-envelope,
 .fa-home {
@@ -453,7 +459,7 @@ footer .fas {
   height: 100%;
   min-width: 360px;
   max-width: 1240px;
-  min-height: 600px;
+  /* min-height: 600px; */
   background: #f2f2f2;
   position: absolute;
   z-index: 1000;

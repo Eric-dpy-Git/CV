@@ -1,8 +1,5 @@
 footer {
   min-height: 200px;
-  .fas {
-    font-size: 18px;
-  }
 }
 
 .footer__wrapper {
@@ -32,6 +29,11 @@ footer {
   box-shadow: inset 0 6px 6px -6px $secondary;
   background-color: $tertiaire;
 }
+.fa-mobile-alt,
+.fa-envelope,
+.fa-home {
+  font-size: 18px;
+}
 
 .fa-linkedin {
   color: $linkedin;
@@ -42,6 +44,9 @@ footer {
   color: $youTube;
   margin-left: 20px;
   margin-bottom: 20px;
+}
+.fa-globe {
+  color: $black;
 }
 .fa-mobile-alt,
 .fa-envelope,
