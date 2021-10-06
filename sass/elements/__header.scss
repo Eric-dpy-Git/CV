@@ -34,7 +34,7 @@ h1 {
 .header__separation {
   height: 2px;
   border: 0;
-  box-shadow: inset 0 6px 6px -6px white;
+  box-shadow: inset 0 6px 6px -6px $secondary;
   background-color: $tertiaire;
 }
 
@@ -50,4 +50,8 @@ h1 {
     margin: 0;
     line-height: 16px;
   }
+}
+.header__text-rqth {
+  color: $secondary;
+  margin-top: 20px;
 }
